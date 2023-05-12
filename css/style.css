@@ -1,0 +1,175 @@
+* {
+    font-family: Sofia Pro, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #8394A2;
+}
+.active {
+    font-weight: bold;
+}
+/*nav*/
+nav {
+    background-color: #4F5D68;
+    width: 100%;
+    height: auto;
+}
+nav ul {
+    margin: 0;
+    padding: 1vw;
+    text-align: center;
+}
+nav ul li {
+    list-style-type: none;
+}
+
+li {
+    font-size: 1em;
+    font-weight: lighter;
+    display: inline;
+    padding: 60px 40px 60px 40px;
+    text-align: center;
+}
+li a {
+    color: white;
+    text-decoration: none;
+}
+li a:hover, li a:active {
+    color: black;
+    border-bottom: 3px solid black;
+}
+/*tekst*/
+h1 {
+    color: #424953;
+    font-size: 4em;
+    font-weight: bold;
+    top: 28%;
+    left: 55%;
+}
+h2 {
+    color: white;
+    font-size: 2em;
+    top: 39%;
+    left: 55%;
+}
+p {
+    color: white;
+    font-size: 1em;
+    font-weight: lighter;
+    margin-top: 2%;
+}
+/*button*/
+/*responsive elements gebruikt uit https://fdossena.com/?p=html5cool/buttons/i.frag*/
+.btn {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    background-color: #F4F5F0;
+    border-color: #F4F5F0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    color: #232C27;
+    text-decoration: none;
+}
+.btn:hover {
+    font-weight: bolder;
+    background-color: #D7D3CF;
+    border-color: #D7D3CF;
+}
+/*images*/
+.profielfoto {
+    margin-left: 15vw;
+}
+.figuurfooter {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+}
+/*tablet*/
+@media screen
+and (max-width: 1181px)
+and (orientation: landscape) {
+    nav{
+        background-color: #F4F5F0;
+    }
+    nav ul {
+        padding: 2vw;
+    }
+    li a {
+        color: #2c2c2c;
+    }
+    .container-fluid {
+        margin-top: 10vw;
+    }
+}
+@media screen
+and (min-width: 820px)
+and (orientation: portrait) {
+    nav{
+        background-color: #F4F5F0;
+    }
+    nav ul {
+        padding: 5vw;
+    }
+    li a {
+        color: #2c2c2c;
+    }
+    .container-fluid {
+        margin-top: 10vw;
+    }
+    /*profielfoto center opgezocht en gevonden van stackoverflow*/
+    .profielfoto{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #tekst{
+        text-align: center;
+    }
+    .btn{
+        margin-top: 5vw;
+    }
+}
+/*smartphone*/
+@media screen
+and (max-width: 415px)
+and (orientation: portrait) {
+    nav{
+        background-color: #F4F5F0;
+    }
+    li {
+        font-size: 1em;
+        display: block;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+    li a {
+        color: #2c2c2c;
+    }
+    .profielfoto{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        width: 185px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    #tekst{
+        text-align: center;
+    }
+    .btn{
+        margin-top: 5vw;
+    }
+
+}
+
+
+
