@@ -377,7 +377,7 @@ and (max-width: 768px) {
         font-size: 14px;
     }
     #contactSection input, #contactSection select{
-        width: 200px;
+        width: 175px;
     }
 
 }
