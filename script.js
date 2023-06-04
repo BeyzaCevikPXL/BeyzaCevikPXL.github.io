@@ -1,3 +1,10 @@
+/*loading*/
+document.addEventListener('DOMContentLoaded', function() {
+    // Display the body element when everything is loaded
+    document.body.style.display = 'block';
+});
+
+
 /*navbar scroll*/
 window.addEventListener('scroll', function () {
     var navbar = document.querySelector('.navbar');
