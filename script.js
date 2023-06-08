@@ -1,6 +1,5 @@
 /*loading*/
 document.addEventListener('DOMContentLoaded', function() {
-    // Display the body element when everything is loaded
     document.body.style.display = 'block';
 });
 
@@ -18,9 +17,9 @@ function toggleNavbar() {
     var navbar = document.querySelector('.navbar');
     navbar.classList.toggle('opened');
     if (navbar.classList.contains('opened')) {
-        navbar.style.backgroundColor = '#A5ADB0'; // Change to your desired background color
+        navbar.style.backgroundColor = '#A5ADB0';
     } else {
-        navbar.style.backgroundColor = ''; // Reset to the default background color
+        navbar.style.backgroundColor = '';
     }
 }
 
@@ -43,3 +42,4 @@ function scrollFunction() {
         document.getElementById("scrollButton").style.display = "none";
     }
 }
+

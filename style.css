@@ -21,14 +21,13 @@ h2 {
     font-family: ivymode, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
 }
 
 p {
     font-family: ivymode, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 a {
@@ -79,6 +78,11 @@ a {
     padding-bottom: 50px;
 }
 
+.aboutMePhoto {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
 .subTitles {
     display: flex;
     flex-direction: column;
@@ -112,14 +116,34 @@ a {
 .pdfBtn:hover, .pdfBtnv2 {
     background-color: #496074;
 }
-.socialmedia{
+
+.socialmedia {
     display: flex;
     justify-content: center;
 }
-.socialmedia a img{
-    padding-top: 50px;
-    width: 25%;
+
+.fa-brands {
+    padding-top: 75px;
+    font-size: 50px;
+}
+/*my work*/
+.photoshop{
+    width: 100%;
     height: auto;
+
+}
+#carouselExampleCaptions{
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+
+}
+.logosrow img{
+    width: 80%;
+    height: auto;
+}
+.logosrow{
+    margin: 0;
 }
 /*cases*/
 /*row1*/
@@ -139,6 +163,7 @@ a {
 
 .credits {
     padding-left: 40px;
+    font-size: 15px;
 }
 
 .caseInfo {
@@ -153,10 +178,32 @@ a {
     color: #496074;
 }
 
+/*team*/
+.subtitle {
+    margin: 50px 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+.teamRow, .logosrow{
+    display: flex;
+    justify-content: center;
+}
+.teamCol, .logosrow .col-4{
+    display: flex;
+    justify-content: center;
+}
+.teamPicture{
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 
+}
 /*row2*/
 .jobAhoiSection {
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .iconCaseLogo {
@@ -183,7 +230,7 @@ a {
 }
 
 .brandbookSection {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .borderbuttons {
@@ -193,6 +240,7 @@ a {
 .borders {
     padding: 50px 40px 50px;
     margin: 20px;
+    border-radius: 15px;
     background-color: #496074;
 }
 
@@ -222,9 +270,9 @@ a {
 }
 
 #carouselExampleDark {
-    width: 70%; /* Set the desired width for your carousel */
-    height: auto; /* Set the desired height for your carousel */
-    margin: 50px auto; /* Center the carousel horizontally */
+    width: 70%;
+    height: auto;
+    margin: 50px auto;
 }
 
 .carousel-inner img {
@@ -251,15 +299,17 @@ a {
 #contactSection input, #contactSection select {
     width: 300px;
     background-color: #dddddd;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px;
     border: none;
     margin: 0 5px;
 }
-#contactSection textarea{
+
+#contactSection textarea {
     background-color: #dddddd;
-    border-radius: 10px;
+    border-radius: 15px;
 }
+
 /*footer*/
 footer {
     display: flex;
@@ -270,6 +320,11 @@ footer {
     height: 100px;
     padding-top: 10px;
 }
+
+footer p {
+    font-size: 15px;
+}
+
 /*scroll button*/
 #scrollButton {
     display: none;
@@ -292,6 +347,7 @@ footer {
 #scrollButton:hover {
     background-color: #A5ADB0;
 }
+
 /*responsive*/
 @media screen
 and (max-width: 992px) {
@@ -328,7 +384,12 @@ and (max-width: 992px) {
     .iconCaseLogo {
         display: none;
     }
-
+    .subtitle{
+        margin-top: 0;
+    }
+    .jobAhoiSection{
+        margin-top: 70px;
+    }
     .jobahoitext {
         text-align: center;
     }
@@ -369,14 +430,19 @@ and (max-width: 768px) {
         padding-left: 0;
     }
 
-    .titleText, .jobahoitext, .codingText{
+    .titleText, .jobahoitext, .codingText {
         font-size: 16px;
     }
 
     .paragraphText, .casesText, .pdfBtn, .pdfBtnv2, footer p {
         font-size: 14px;
     }
-    #contactSection input, #contactSection select{
+    .teamPicture{
+        width: 100%;
+        height: auto;
+    }
+
+    #contactSection input, #contactSection select {
         width: 175px;
     }
 
