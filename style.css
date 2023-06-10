@@ -73,13 +73,15 @@ a {
 }
 
 /*about me*/
+.white{
+    background-color: white;
+}
 .aboutMe {
     background-color: white;
     padding-bottom: 50px;
 }
 
 .aboutMePhoto {
-    border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -91,7 +93,7 @@ a {
 
 .textInfo {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .aboutMePhoto {
@@ -117,15 +119,15 @@ a {
     background-color: #496074;
 }
 
-.socialmedia {
+/*.socialmedia {
     display: flex;
     justify-content: center;
 }
 
-.fa-brands {
+.fa-brands, .fa-regular{
     padding-top: 75px;
     font-size: 50px;
-}
+}*/
 /*my work*/
 .photoshop{
     width: 100%;
@@ -139,7 +141,7 @@ a {
 
 }
 .logosrow img{
-    width: 80%;
+    width: 70%;
     height: auto;
 }
 .logosrow{
@@ -154,7 +156,7 @@ a {
 }
 
 .caseTitle {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .casesText {
@@ -172,7 +174,12 @@ a {
     padding: 50px;
     margin-top: 25px;
 }
-
+.job{
+    color: #ED4F4F;
+}
+.ahoi{
+    color: #FFA500;
+}
 .colorChange {
     font-weight: 600;
     color: #496074;
@@ -180,7 +187,7 @@ a {
 
 /*team*/
 .subtitle {
-    margin: 50px 0 50px 0;
+    margin: 30px 0 30px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,19 +202,17 @@ a {
     justify-content: center;
 }
 .teamPicture{
-    border-radius: 15px;
     width: 80%;
     height: auto;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-
 }
 /*row2*/
 .jobAhoiSection {
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 .iconCaseLogo {
-    width: 30%;
+    width: 28%;
     height: auto;
 }
 
@@ -220,6 +225,7 @@ a {
 
 .jobahoitext {
     text-align: right;
+    margin-right: 50px;
 }
 
 /*row3*/
@@ -230,7 +236,7 @@ a {
 }
 
 .brandbookSection {
-    margin-top: 60px;
+    margin-top: 25px;
 }
 
 .borderbuttons {
@@ -295,7 +301,16 @@ a {
     justify-content: center;
     margin-bottom: 10px;
 }
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
 
+.fa-brands, .fa-regular{
+    padding-top: 45px;
+    font-size: 50px;
+}
+/*
 #contactSection input, #contactSection select {
     width: 300px;
     background-color: #dddddd;
@@ -309,6 +324,7 @@ a {
     background-color: #dddddd;
     border-radius: 15px;
 }
+*/
 
 /*footer*/
 footer {
@@ -349,6 +365,16 @@ footer p {
 }
 
 /*responsive*/
+/*ipad landscape*/
+@media screen and (max-width: 1200px) {
+    .textInfo{
+        margin-top: 50px;
+    }
+    .borderbuttons {
+        margin-top: 230px;
+    }
+}
+/*ipad portrait*/
 @media screen
 and (max-width: 992px) {
     .titel {
@@ -388,10 +414,11 @@ and (max-width: 992px) {
         margin-top: 0;
     }
     .jobAhoiSection{
-        margin-top: 70px;
+        margin-top: 50px;
     }
     .jobahoitext {
         text-align: center;
+        margin-right: 0;
     }
 
     .borderbuttons {
@@ -399,7 +426,7 @@ and (max-width: 992px) {
     }
 
     .brandbookSection {
-        margin-top: 45px;
+        margin-top: 20px;
     }
 
     .borders {
@@ -415,9 +442,24 @@ and (max-width: 992px) {
         justify-content: center;
         margin: 10px 0 0 0;
     }
-
+    #assignmentSection .col-6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #carouselExampleDark {
+        width: 100%
+    }
+    .teamPicture{
+        width: 100%;
+        height: auto;
+    }
+    #carouselExampleCaptions{
+        width: 100%;
+        height: auto;
+    }
 }
-
+/*phone*/
 @media screen
 and (max-width: 768px) {
     .classfoto {
@@ -437,10 +479,7 @@ and (max-width: 768px) {
     .paragraphText, .casesText, .pdfBtn, .pdfBtnv2, footer p {
         font-size: 14px;
     }
-    .teamPicture{
-        width: 100%;
-        height: auto;
-    }
+
 
     #contactSection input, #contactSection select {
         width: 175px;
