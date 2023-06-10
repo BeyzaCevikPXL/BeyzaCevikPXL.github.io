@@ -479,7 +479,9 @@ and (max-width: 768px) {
     .paragraphText, .casesText, .pdfBtn, .pdfBtnv2, footer p {
         font-size: 14px;
     }
-
+    .pdfBtnv2{
+        margin-left: 0;
+    }
 
     #contactSection input, #contactSection select {
         width: 175px;
