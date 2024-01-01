@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
+    background-color: #d8ddde;
+}
+
+h1 {
+    font-family: 'IvyMode', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'IvyMode', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*navbar*/
+.navbar {
+    position: fixed;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: #A5ADB0;
+}
+
+.navbar.opened {
+    background-color: #A5ADB0;
+}
+
+.navbar li a {
+    margin-left: 5rem;
+}
+
+.favicon {
+    height: 50px;
+    width: 50px;
+}
+.caseLogo {
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+}
+
+.caseTitle {
+    margin-top: 50px;
+}
+
+.casesText {
+    font-size: 18px;
+}
+
+.credits {
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+.caseInfo {
+    background-color: #A5ADB0;
+    color: white;
+    padding: 50px;
+    margin-top: 25px;
+}
+.job{
+    color: #ED4F4F;
+}
+.ahoi{
+    color: #FFA500;
+}
+.colorChange {
+    font-weight: 600;
+    color: #496074;
+}
+
+/*team*/
+.subtitle {
+    margin: 30px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+.subTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teamRow, .logosrow{
+    display: flex;
+    justify-content: center;
+}
+.teamCol, .logosrow .col-4{
+    display: flex;
+    justify-content: center;
+}
+.teamPicture{
+    width: 80%;
+    height: auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+/*row2*/
+.jobAhoiSection {
+    margin-top: 60px;
+}
+
+.iconCaseLogo {
+    width: 28%;
+    height: auto;
+}
+
+.containerIconLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jobahoitext {
+    text-align: right;
+    margin-right: 50px;
+}
+
+/*row3*/
+.designInfo {
+    background-color: white;
+    padding: 50px;
+    margin-top: 25px;
+}
+
+.brandbookSection {
+    margin-top: 25px;
+}
+
+.borderbuttons {
+    margin-top: 150px;
+}
+
+.borders {
+    padding: 50px 40px 50px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #496074;
+}
+
+.borders a {
+    color: white;
+}
+
+.borders a:hover {
+    color: #68859D;
+}
+
+/*row4*/
+.linkEind:hover {
+    color: #68859D;
+}
+
+.linkEind {
+    color: #496074;
+    border-bottom: 1px solid #68859D;
+}
+
+/*scroll*/
+#scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #808B8E;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scrollButton:hover {
+    background-color: #A5ADB0;
+}
