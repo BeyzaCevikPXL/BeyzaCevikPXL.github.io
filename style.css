@@ -277,7 +277,8 @@ a {
     font-weight: 600;
 }
 #pitch {
-    width: 70%; 
+    display: flex;
+    justify-content: center; 
 }
 .subTitles2{
     margin-top: 20px;
