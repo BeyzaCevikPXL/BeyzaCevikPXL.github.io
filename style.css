@@ -46,10 +46,6 @@ a {
 .navbar.opened {
     background-color: #A5ADB0;
 }
-
-.navbar .container {
-}
-
 .navbar li a {
     margin-left: 5rem;
 }
