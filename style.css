@@ -60,6 +60,7 @@ a {
 .designFoto {
     width: 80%;
     height: auto;
+    padding: 4em 0;
 }
 
 .titel {
@@ -367,6 +368,16 @@ footer p {
     background-color: #A5ADB0;
 }
 
+.text-opdrachten{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: row;
+    gap: 2em;
+}
+.opdrachten_box{
+    width: calc(50% - 1em);
+}
 /*responsive*/
 /*ipad landscape*/
 @media screen and (max-width: 1200px) {
@@ -489,5 +500,15 @@ and (max-width: 768px) {
     #contactSection input, #contactSection select {
         width: 175px;
     }
-
+    .text-opdrachten{
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .opdrachten_box{
+        width: 100%;
+        padding: 0 3.5%;
+    }
 }
