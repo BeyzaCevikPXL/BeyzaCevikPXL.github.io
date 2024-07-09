@@ -293,7 +293,6 @@ a {
 }
 /*contact*/
 #contactSection {
-    background-color: white;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
